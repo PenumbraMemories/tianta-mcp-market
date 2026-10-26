@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "name": "Tianta MCP Market",
-  "updatedAt": "2026-10-24T04:00:00Z",
+  "updatedAt": "2026-10-26T10:30:00Z",
   "packages": [
     {
       "id": "text-toolkit",
@@ -10,15 +10,100 @@
       "description": "演示 Tianta MCP 市场的完整安装格式：自带 mcp.json、stdio 入口和最小运行时。安装后不会访问网络，也不会读写工作区文件。",
       "version": "0.1.0",
       "author": "PenumbraMemories",
-      "tags": ["文本", "示例", "入门"],
+      "tags": [
+        "文本",
+        "示例",
+        "入门"
+      ],
       "homepage": "https://github.com/PenumbraMemories/tianta-mcp-market",
-      "permissions": ["无文件访问", "只在本机运行"],
+      "permissions": [
+        "无文件访问",
+        "只在本机运行"
+      ],
       "workspaceAccess": "none",
       "minTiantaVersion": "1.0.0",
       "download": {
-        "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/v0.1.0/text-toolkit-0.1.0.zip",
+        "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/v1.0.0/text-toolkit-0.1.0.zip",
         "sha256": "45642f7d6fcf54f238278966c18629804e5b52ab4a446099ad39f4f773ff52b7",
         "size": 4204
+      }
+    },
+    {
+      "id": "audio-to-midi",
+      "name": "音频转 MIDI",
+      "summary": "在本机把音频离线转成 MIDI，适合扒谱和二次编曲。",
+      "description": "完整包含 Basic Pitch 运行时，不需要额外安装 Python 依赖。读取授权工作区里的音频，输出同目录的 MIDI 文件。",
+      "version": "1.0.0",
+      "author": "PenumbraMemories",
+      "tags": [
+        "音频",
+        "MIDI",
+        "扒谱"
+      ],
+      "homepage": "https://github.com/PenumbraMemories/tianta-mcp-market",
+      "permissions": [
+        "读取工作区音频",
+        "运行本地 Basic Pitch",
+        "写入 MIDI 文件"
+      ],
+      "workspaceAccess": "read-write",
+      "minTiantaVersion": "1.0.0",
+      "download": {
+        "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/v1.0.0/audio-to-midi-1.0.0.zip",
+        "sha256": "94b9cc58992323c136fbb5ddad6fbcdb498aa390bae3adeb6c7f01b2028a16f9",
+        "size": 175770608
+      }
+    },
+    {
+      "id": "encrypted-music-conversion",
+      "name": "加密音乐转换",
+      "summary": "把合法持有的 KGG/KGM/KGMA/VPR/NCM 音乐转换成本地音频。",
+      "description": "完整包含本地转换运行时。支持输出 MP3、FLAC、WAV 或遵循原格式，仅处理你有权使用的文件。",
+      "version": "1.0.0",
+      "author": "PenumbraMemories",
+      "tags": [
+        "音乐",
+        "格式转换",
+        "解密"
+      ],
+      "homepage": "https://github.com/PenumbraMemories/tianta-mcp-market",
+      "permissions": [
+        "读取工作区音乐文件",
+        "运行本地转换服务",
+        "写入转换音频"
+      ],
+      "workspaceAccess": "read-write",
+      "minTiantaVersion": "1.0.0",
+      "download": {
+        "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/v1.0.0/encrypted-music-conversion-1.0.0.zip",
+        "sha256": "5710ec4a4e84bbe86cf8309abbb5aa946384b64a2134e6c3f0b608c19ac3f878",
+        "size": 35957606
+      }
+    },
+    {
+      "id": "universal-image-upscaling",
+      "name": "通用图片高清放大",
+      "summary": "用本机 Real-ESRGAN 把图片放大 4 倍。",
+      "description": "完整包含 Real-ESRGAN 运行时，不需要额外安装依赖。读取授权工作区里的图片，输出放大后的 PNG。",
+      "version": "1.0.0",
+      "author": "PenumbraMemories",
+      "tags": [
+        "图片",
+        "放大",
+        "Real-ESRGAN"
+      ],
+      "homepage": "https://github.com/PenumbraMemories/tianta-mcp-market",
+      "permissions": [
+        "读取工作区图片",
+        "调用本机 Real-ESRGAN",
+        "写入放大图片"
+      ],
+      "workspaceAccess": "read-write",
+      "minTiantaVersion": "1.0.0",
+      "download": {
+        "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/v1.0.0/universal-image-upscaling-1.0.0.zip",
+        "sha256": "a5e38c3dd7813479224443ee3b84909b5e10efdaaeff101aeddac75427afdec1",
+        "size": 34379700
       }
     }
   ]
