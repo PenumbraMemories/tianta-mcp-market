@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "name": "Tianta MCP Market",
-  "updatedAt": "2026-10-26T10:30:00Z",
+  "updatedAt": "2026-10-26T10:40:00Z",
   "packages": [
     {
       "id": "text-toolkit",
@@ -50,8 +50,8 @@
       "minTiantaVersion": "1.0.0",
       "download": {
         "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/v1.0.0/audio-to-midi-1.0.0.zip",
-        "sha256": "94b9cc58992323c136fbb5ddad6fbcdb498aa390bae3adeb6c7f01b2028a16f9",
-        "size": 175770608
+        "sha256": "b0e25544d40739cf731801b5a11f94a828163782bbde2d6efe29cfaea2905020",
+        "size": 175547812
       }
     },
     {
@@ -76,8 +76,8 @@
       "minTiantaVersion": "1.0.0",
       "download": {
         "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/v1.0.0/encrypted-music-conversion-1.0.0.zip",
-        "sha256": "5710ec4a4e84bbe86cf8309abbb5aa946384b64a2134e6c3f0b608c19ac3f878",
-        "size": 35957606
+        "sha256": "a17f303df24b9cb7356ff43ec0386a8a448d8a58abda946c5fbfbd9e70f86f93",
+        "size": 35957282
       }
     },
     {
@@ -102,8 +102,8 @@
       "minTiantaVersion": "1.0.0",
       "download": {
         "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/v1.0.0/universal-image-upscaling-1.0.0.zip",
-        "sha256": "a5e38c3dd7813479224443ee3b84909b5e10efdaaeff101aeddac75427afdec1",
-        "size": 34379700
+        "sha256": "9b538bfbe3046c447a5fa05c02bceb8c4976fc1cbf4abec15548681ce8826005",
+        "size": 34379128
       }
     }
   ]
