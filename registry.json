@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "name": "Tianta MCP Market",
-  "updatedAt": "2026-10-26T10:40:00Z",
+  "updatedAt": "2026-10-27T04:22:43Z",
   "packages": [
     {
       "id": "text-toolkit",
@@ -104,6 +104,32 @@
         "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/v1.0.0/universal-image-upscaling-1.0.0.zip",
         "sha256": "9b538bfbe3046c447a5fa05c02bceb8c4976fc1cbf4abec15548681ce8826005",
         "size": 34379128
+      }
+    },
+    {
+      "id": "wd-swinv2-tagger-v3",
+      "name": "WD 图片标签识别",
+      "summary": "本地识别 Danbooru 标签、角色与分级，不上传图片。",
+      "description": "用 WD SwinV2 Tagger v3 的 ONNX 模型在本地分析图片，返回按置信度排序的通用标签、角色和分级。模型随包分发，不会上传图片。",
+      "version": "1.0.0",
+      "author": "PenumbraMemories",
+      "tags": [
+        "图片",
+        "标签",
+        "Danbooru",
+        "ONNX"
+      ],
+      "homepage": "https://github.com/PenumbraMemories/tianta-mcp-market",
+      "permissions": [
+        "读取工作区图片",
+        "本地加载 WD Tagger 模型"
+      ],
+      "workspaceAccess": "read",
+      "minTiantaVersion": "1.0.0",
+      "download": {
+        "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/wd-tagger-v1.0.0/wd-swinv2-tagger-v3-1.0.0.zip",
+        "sha256": "8ac34fc0fd0e7ed6fdb1e894a78c52bb0188af779411190d6b75e717a7f2dd29",
+        "size": 467790632
       }
     }
   ]
