@@ -1,163 +1,163 @@
 {
-  "schemaVersion": 1,
-  "name": "Tianta MCP Market",
-  "updatedAt": "2026-10-28T04:45:30Z",
-  "packages": [
-    {
-      "id": "text-toolkit",
-      "name": "文本工具箱",
-      "summary": "统计文本、生成 slug，一个不访问文件的入门示例。",
-      "description": "演示 Tianta MCP 市场的完整安装格式：自带 mcp.json、stdio 入口和最小运行时。安装后不会访问网络，也不会读写工作区文件。",
-      "version": "0.1.0",
-      "author": "PenumbraMemories",
-      "tags": [
-        "文本",
-        "示例",
-        "入门"
-      ],
-      "homepage": "https://github.com/PenumbraMemories/tianta-mcp-market",
-      "permissions": [
-        "无文件访问",
-        "只在本机运行"
-      ],
-      "workspaceAccess": "none",
-      "minTiantaVersion": "1.0.0",
-      "download": {
-        "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/v1.0.0/text-toolkit-0.1.0.zip",
-        "sha256": "45642f7d6fcf54f238278966c18629804e5b52ab4a446099ad39f4f773ff52b7",
-        "size": 4204
-      }
-    },
-    {
-      "id": "audio-to-midi",
-      "name": "音频转 MIDI",
-      "summary": "在本机把音频离线转成 MIDI，适合扒谱和二次编曲。",
-      "description": "完整包含 Basic Pitch 运行时，不需要额外安装 Python 依赖。读取授权工作区里的音频，输出同目录的 MIDI 文件。",
-      "version": "1.0.0",
-      "author": "PenumbraMemories",
-      "tags": [
-        "音频",
-        "MIDI",
-        "扒谱"
-      ],
-      "homepage": "https://github.com/PenumbraMemories/tianta-mcp-market",
-      "permissions": [
-        "读取工作区音频",
-        "运行本地 Basic Pitch",
-        "写入 MIDI 文件"
-      ],
-      "workspaceAccess": "read-write",
-      "minTiantaVersion": "1.0.0",
-      "download": {
-        "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/v1.0.0/audio-to-midi-1.0.0.zip",
-        "sha256": "b0e25544d40739cf731801b5a11f94a828163782bbde2d6efe29cfaea2905020",
-        "size": 175547812
-      }
-    },
-    {
-      "id": "encrypted-music-conversion",
-      "name": "加密音乐转换",
-      "summary": "把合法持有的 KGG/KGM/KGMA/VPR/NCM 音乐转换成本地音频。",
-      "description": "完整包含本地转换运行时。支持输出 MP3、FLAC、WAV 或遵循原格式，仅处理你有权使用的文件。",
-      "version": "1.0.0",
-      "author": "PenumbraMemories",
-      "tags": [
-        "音乐",
-        "格式转换",
-        "解密"
-      ],
-      "homepage": "https://github.com/PenumbraMemories/tianta-mcp-market",
-      "permissions": [
-        "读取工作区音乐文件",
-        "运行本地转换服务",
-        "写入转换音频"
-      ],
-      "workspaceAccess": "read-write",
-      "minTiantaVersion": "1.0.0",
-      "download": {
-        "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/v1.0.0/encrypted-music-conversion-1.0.0.zip",
-        "sha256": "a17f303df24b9cb7356ff43ec0386a8a448d8a58abda946c5fbfbd9e70f86f93",
-        "size": 35957282
-      }
-    },
-    {
-      "id": "universal-image-upscaling",
-      "name": "通用图片高清放大",
-      "summary": "用本机 Real-ESRGAN 把图片放大 4 倍。",
-      "description": "完整包含 Real-ESRGAN 运行时，不需要额外安装依赖。读取授权工作区里的图片，输出放大后的 PNG。",
-      "version": "1.0.0",
-      "author": "PenumbraMemories",
-      "tags": [
-        "图片",
-        "放大",
-        "Real-ESRGAN"
-      ],
-      "homepage": "https://github.com/PenumbraMemories/tianta-mcp-market",
-      "permissions": [
-        "读取工作区图片",
-        "调用本机 Real-ESRGAN",
-        "写入放大图片"
-      ],
-      "workspaceAccess": "read-write",
-      "minTiantaVersion": "1.0.0",
-      "download": {
-        "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/v1.0.0/universal-image-upscaling-1.0.0.zip",
-        "sha256": "9b538bfbe3046c447a5fa05c02bceb8c4976fc1cbf4abec15548681ce8826005",
-        "size": 34379128
-      }
-    },
-    {
-      "id": "rapid-ocr",
-      "name": "RapidOCR 文字识别",
-      "summary": "用本地 RapidOCR + PP-OCRv6 ONNX 模型识别图片文字，速度比 PaddleOCR 快很多。",
-      "description": "内置 PP-OCRv6 检测/识别与方向分类模型，使用 ONNX Runtime 在本地识别图片中的中文、英文和数字，返回文字、置信度和检测框。不上传图片，不依赖云端服务。",
-      "version": "1.0.0",
-      "author": "PenumbraMemories",
-      "tags": [
-        "OCR",
-        "文字识别",
-        "RapidOCR",
-        "ONNX",
-        "图片"
-      ],
-      "homepage": "https://github.com/PenumbraMemories/tianta-mcp-market",
-      "permissions": [
-        "读取工作区图片",
-        "本地运行 RapidOCR/ONNX"
-      ],
-      "workspaceAccess": "read",
-      "minTiantaVersion": "1.0.0",
-      "download": {
-        "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/rapid-ocr-v1.0.0/rapid-ocr-1.0.0.zip",
-        "sha256": "9c81cfa9f57505804c33c4e00c196a6900a4d323f0f35cb0843060ecafc69063",
-        "size": 27107623
-      }
-    },
-    {
-      "id": "live2d-aijier",
-      "name": "埃吉尔 Live2D（皮肤 #2）",
-      "summary": "在左侧栏显示埃吉尔 Live2D 形象，并根据 agent 的思考、工具调用和完成状态切换动作。",
-      "description": "市场安装后，左侧栏会显示埃吉尔（皮肤 #2）Live2D 形象。包内包含模型、贴图、动作、物理与表情文件，全部在本地渲染，不上传图片或对话内容。",
-      "version": "1.0.0",
-      "author": "PenumbraMemories",
-      "tags": [
-        "Live2D",
-        "形象",
-        "埃吉尔",
-        "碧蓝航线"
-      ],
-      "homepage": "https://github.com/PenumbraMemories/tianta-mcp-market",
-      "permissions": [
-        "读取本地 Live2D 模型",
-        "在左侧栏渲染形象"
-      ],
-      "workspaceAccess": "none",
-      "minTiantaVersion": "1.0.0",
-      "download": {
-        "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/live2d-aijier-v1.0.0/live2d-aijier-1.0.0.zip",
-        "sha256": "37779b394d3c701be66096f01ee7944acdf39b2550f54c7ff54766871b09d76b",
-        "size": 19576234
-      }
-    }
-  ]
+    "schemaVersion":  1,
+    "name":  "Tianta MCP Market",
+    "updatedAt":  "2026-10-28T04:49:18Z",
+    "packages":  [
+                     {
+                         "id":  "text-toolkit",
+                         "name":  "文本工具箱",
+                         "summary":  "统计文本、生成 slug，一个不访问文件的入门示例。",
+                         "description":  "演示 Tianta MCP 市场的完整安装格式：自带 mcp.json、stdio 入口和最小运行时。安装后不会访问网络，也不会读写工作区文件。",
+                         "version":  "0.1.0",
+                         "author":  "PenumbraMemories",
+                         "tags":  [
+                                      "文本",
+                                      "示例",
+                                      "入门"
+                                  ],
+                         "homepage":  "https://github.com/PenumbraMemories/tianta-mcp-market",
+                         "permissions":  [
+                                             "无文件访问",
+                                             "只在本机运行"
+                                         ],
+                         "workspaceAccess":  "none",
+                         "minTiantaVersion":  "1.0.0",
+                         "download":  {
+                                          "url":  "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/v1.0.0/text-toolkit-0.1.0.zip",
+                                          "sha256":  "45642f7d6fcf54f238278966c18629804e5b52ab4a446099ad39f4f773ff52b7",
+                                          "size":  4204
+                                      }
+                     },
+                     {
+                         "id":  "audio-to-midi",
+                         "name":  "音频转 MIDI",
+                         "summary":  "在本机把音频离线转成 MIDI，适合扒谱和二次编曲。",
+                         "description":  "完整包含 Basic Pitch 运行时，不需要额外安装 Python 依赖。读取授权工作区里的音频，输出同目录的 MIDI 文件。",
+                         "version":  "1.0.0",
+                         "author":  "PenumbraMemories",
+                         "tags":  [
+                                      "音频",
+                                      "MIDI",
+                                      "扒谱"
+                                  ],
+                         "homepage":  "https://github.com/PenumbraMemories/tianta-mcp-market",
+                         "permissions":  [
+                                             "读取工作区音频",
+                                             "运行本地 Basic Pitch",
+                                             "写入 MIDI 文件"
+                                         ],
+                         "workspaceAccess":  "read-write",
+                         "minTiantaVersion":  "1.0.0",
+                         "download":  {
+                                          "url":  "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/v1.0.0/audio-to-midi-1.0.0.zip",
+                                          "sha256":  "b0e25544d40739cf731801b5a11f94a828163782bbde2d6efe29cfaea2905020",
+                                          "size":  175547812
+                                      }
+                     },
+                     {
+                         "id":  "encrypted-music-conversion",
+                         "name":  "加密音乐转换",
+                         "summary":  "把合法持有的 KGG/KGM/KGMA/VPR/NCM 音乐转换成本地音频。",
+                         "description":  "完整包含本地转换运行时。支持输出 MP3、FLAC、WAV 或遵循原格式，仅处理你有权使用的文件。",
+                         "version":  "1.0.0",
+                         "author":  "PenumbraMemories",
+                         "tags":  [
+                                      "音乐",
+                                      "格式转换",
+                                      "解密"
+                                  ],
+                         "homepage":  "https://github.com/PenumbraMemories/tianta-mcp-market",
+                         "permissions":  [
+                                             "读取工作区音乐文件",
+                                             "运行本地转换服务",
+                                             "写入转换音频"
+                                         ],
+                         "workspaceAccess":  "read-write",
+                         "minTiantaVersion":  "1.0.0",
+                         "download":  {
+                                          "url":  "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/v1.0.0/encrypted-music-conversion-1.0.0.zip",
+                                          "sha256":  "a17f303df24b9cb7356ff43ec0386a8a448d8a58abda946c5fbfbd9e70f86f93",
+                                          "size":  35957282
+                                      }
+                     },
+                     {
+                         "id":  "universal-image-upscaling",
+                         "name":  "通用图片高清放大",
+                         "summary":  "用本机 Real-ESRGAN 把图片放大 4 倍。",
+                         "description":  "完整包含 Real-ESRGAN 运行时，不需要额外安装依赖。读取授权工作区里的图片，输出放大后的 PNG。",
+                         "version":  "1.0.0",
+                         "author":  "PenumbraMemories",
+                         "tags":  [
+                                      "图片",
+                                      "放大",
+                                      "Real-ESRGAN"
+                                  ],
+                         "homepage":  "https://github.com/PenumbraMemories/tianta-mcp-market",
+                         "permissions":  [
+                                             "读取工作区图片",
+                                             "调用本机 Real-ESRGAN",
+                                             "写入放大图片"
+                                         ],
+                         "workspaceAccess":  "read-write",
+                         "minTiantaVersion":  "1.0.0",
+                         "download":  {
+                                          "url":  "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/v1.0.0/universal-image-upscaling-1.0.0.zip",
+                                          "sha256":  "9b538bfbe3046c447a5fa05c02bceb8c4976fc1cbf4abec15548681ce8826005",
+                                          "size":  34379128
+                                      }
+                     },
+                     {
+                         "id":  "rapid-ocr",
+                         "name":  "RapidOCR 文字识别",
+                         "summary":  "用本地 RapidOCR + PP-OCRv6 ONNX 模型识别图片文字，速度比 PaddleOCR 快很多。",
+                         "description":  "内置 PP-OCRv6 检测/识别与方向分类模型，使用 ONNX Runtime 在本地识别图片中的中文、英文和数字，返回文字、置信度和检测框。不上传图片，不依赖云端服务。",
+                         "version":  "1.0.0",
+                         "author":  "PenumbraMemories",
+                         "tags":  [
+                                      "OCR",
+                                      "文字识别",
+                                      "RapidOCR",
+                                      "ONNX",
+                                      "图片"
+                                  ],
+                         "homepage":  "https://github.com/PenumbraMemories/tianta-mcp-market",
+                         "permissions":  [
+                                             "读取工作区图片",
+                                             "本地运行 RapidOCR/ONNX"
+                                         ],
+                         "workspaceAccess":  "read",
+                         "minTiantaVersion":  "1.0.0",
+                         "download":  {
+                                          "url":  "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/rapid-ocr-v1.0.0/rapid-ocr-1.0.0.zip",
+                                          "sha256":  "9c81cfa9f57505804c33c4e00c196a6900a4d323f0f35cb0843060ecafc69063",
+                                          "size":  27107623
+                                      }
+                     },
+                     {
+                         "id":  "live2d-aijier",
+                         "name":  "埃吉尔 Live2D（皮肤 #2）",
+                         "summary":  "在左侧栏显示埃吉尔 Live2D 形象，并根据 agent 的思考、工具调用和完成状态切换动作。",
+                         "description":  "市场安装后，左侧栏会显示埃吉尔（皮肤 #2）Live2D 形象。包内包含模型、贴图、动作、物理与表情文件，全部在本地渲染，不上传图片或对话内容。",
+                         "version":  "1.0.0",
+                         "author":  "PenumbraMemories",
+                         "tags":  [
+                                      "Live2D",
+                                      "形象",
+                                      "埃吉尔",
+                                      "碧蓝航线"
+                                  ],
+                         "homepage":  "https://github.com/PenumbraMemories/tianta-mcp-market",
+                         "permissions":  [
+                                             "读取本地 Live2D 模型",
+                                             "在左侧栏渲染形象"
+                                         ],
+                         "workspaceAccess":  "none",
+                         "minTiantaVersion":  "1.0.0",
+                         "download":  {
+                                          "url":  "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/live2d-aijier-v1.0.0/live2d-aijier-1.0.0.zip",
+                                          "sha256":  "7764fc0b1481aad35bc1b966d9737c7561d3789887789f323ba6e87e12473ebd",
+                                          "size":  19576234
+                                      }
+                     }
+                 ]
 }
