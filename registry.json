@@ -1,7 +1,7 @@
 {
     "schemaVersion":  1,
     "name":  "Tianta MCP Market",
-    "updatedAt":  "2026-10-28T04:49:18Z",
+    "updatedAt":  "2026-10-28T04:52:18Z",
     "packages":  [
                      {
                          "id":  "text-toolkit",
@@ -155,8 +155,8 @@
                          "minTiantaVersion":  "1.0.0",
                          "download":  {
                                           "url":  "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/live2d-aijier-v1.0.0/live2d-aijier-1.0.0.zip",
-                                          "sha256":  "7764fc0b1481aad35bc1b966d9737c7561d3789887789f323ba6e87e12473ebd",
-                                          "size":  19576234
+                                          "sha256":  "e22e208bdd79073e7adb4319879bb8ee9685bd7896277a61243acd4b877db321",
+                                          "size":  19576252
                                       }
                      }
                  ]
