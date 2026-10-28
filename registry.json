@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "name": "Tianta MCP Market",
-  "updatedAt": "2026-10-27T04:22:43Z",
+  "updatedAt": "2026-10-28T01:11:13Z",
   "packages": [
     {
       "id": "text-toolkit",
@@ -107,29 +107,30 @@
       }
     },
     {
-      "id": "wd-swinv2-tagger-v3",
-      "name": "WD 图片标签识别",
-      "summary": "本地识别 Danbooru 标签、角色与分级，不上传图片。",
-      "description": "用 WD SwinV2 Tagger v3 的 ONNX 模型在本地分析图片，返回按置信度排序的通用标签、角色和分级。模型随包分发，不会上传图片。",
-      "version": "1.0.1",
+      "id": "paddle-ocr",
+      "name": "PaddleOCR 文字识别",
+      "summary": "用最新的 PP-OCRv5 服务端模型在本地识别图片中的中文、英文与数字。",
+      "description": "内置 PP-OCRv5 检测/识别/方向模型，读取授权工作区图片并返回文字、置信度与坐标。使用 PaddleOCR 3.7.0 pipeline，不上传图片；首次调用会自动安装 Python 依赖。",
+      "version": "1.0.0",
       "author": "PenumbraMemories",
       "tags": [
-        "图片",
-        "标签",
-        "Danbooru",
-        "ONNX"
+        "OCR",
+        "文字识别",
+        "PaddleOCR",
+        "图片"
       ],
       "homepage": "https://github.com/PenumbraMemories/tianta-mcp-market",
       "permissions": [
         "读取工作区图片",
-        "本地加载 WD Tagger 模型"
+        "本地运行 PaddleOCR",
+        "内置 PP-OCRv5 模型"
       ],
       "workspaceAccess": "read",
       "minTiantaVersion": "1.0.0",
       "download": {
-        "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/wd-tagger-v1.0.1/wd-swinv2-tagger-v3-1.0.1.zip",
-        "sha256": "a393573292e62f15117b4c09abf5985dde4274f743c1422298736353174517bd",
-        "size": 364888132
+        "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/paddle-ocr-v1.0.0/paddle-ocr-1.0.0.zip",
+        "sha256": "c8652b77c7aa58295d2128ed9262232c13852bd047902b1d1e4cda4e8e8780a1",
+        "size": 162567256
       }
     }
   ]
