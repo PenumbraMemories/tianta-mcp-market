@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "name": "Tianta MCP Market",
-  "updatedAt": "2026-10-28T01:11:13Z",
+  "updatedAt": "2026-10-28T02:19:27Z",
   "packages": [
     {
       "id": "text-toolkit",
@@ -107,30 +107,30 @@
       }
     },
     {
-      "id": "paddle-ocr",
-      "name": "PaddleOCR 文字识别",
-      "summary": "用最新的 PP-OCRv5 服务端模型在本地识别图片中的中文、英文与数字。",
-      "description": "内置 PP-OCRv5 检测/识别/方向模型，读取授权工作区图片并返回文字、置信度与坐标。使用 PaddleOCR 3.7.0 pipeline，不上传图片；首次调用会自动安装 Python 依赖。",
+      "id": "rapid-ocr",
+      "name": "RapidOCR 文字识别",
+      "summary": "用本地 RapidOCR + PP-OCRv6 ONNX 模型识别图片文字，速度比 PaddleOCR 快很多。",
+      "description": "内置 PP-OCRv6 检测/识别与方向分类模型，使用 ONNX Runtime 在本地识别图片中的中文、英文和数字，返回文字、置信度和检测框。不上传图片，不依赖云端服务。",
       "version": "1.0.0",
       "author": "PenumbraMemories",
       "tags": [
         "OCR",
         "文字识别",
-        "PaddleOCR",
+        "RapidOCR",
+        "ONNX",
         "图片"
       ],
       "homepage": "https://github.com/PenumbraMemories/tianta-mcp-market",
       "permissions": [
         "读取工作区图片",
-        "本地运行 PaddleOCR",
-        "内置 PP-OCRv5 模型"
+        "本地运行 RapidOCR/ONNX"
       ],
       "workspaceAccess": "read",
       "minTiantaVersion": "1.0.0",
       "download": {
-        "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/paddle-ocr-v1.0.0/paddle-ocr-1.0.0.zip",
-        "sha256": "c8652b77c7aa58295d2128ed9262232c13852bd047902b1d1e4cda4e8e8780a1",
-        "size": 162567256
+        "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/rapid-ocr-v1.0.0/rapid-ocr-1.0.0.zip",
+        "sha256": "9c81cfa9f57505804c33c4e00c196a6900a4d323f0f35cb0843060ecafc69063",
+        "size": 27107623
       }
     }
   ]
