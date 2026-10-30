@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "name": "Tianta MCP Market",
-  "updatedAt": "2026-10-28T04:52:18Z",
+  "updatedAt": "2026-10-30T01:40:00Z",
   "packages": [
     {
       "id": "text-toolkit",
@@ -131,6 +131,60 @@
         "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/rapid-ocr-v1.0.0/rapid-ocr-1.0.0.zip",
         "sha256": "9c81cfa9f57505804c33c4e00c196a6900a4d323f0f35cb0843060ecafc69063",
         "size": 27107623
+      }
+    },
+    {
+      "id": "live2d-aijier",
+      "name": "埃吉尔 Live2D（皮肤 #2）",
+      "summary": "在左侧栏显示埃吉尔 Live2D 形象，并根据 agent 的思考、工具调用和完成状态切换动作。",
+      "description": "市场安装后，左侧栏会显示埃吉尔（皮肤 #2）Live2D 形象。包内包含模型、贴图、动作、物理与表情文件，全部在本地渲染，不上传图片或对话内容。",
+      "version": "1.0.0",
+      "author": "PenumbraMemories",
+      "tags": [
+        "Live2D",
+        "形象",
+        "埃吉尔",
+        "碧蓝航线"
+      ],
+      "homepage": "https://github.com/PenumbraMemories/tianta-mcp-market",
+      "permissions": [
+        "读取本地 Live2D 模型",
+        "在左侧栏渲染形象"
+      ],
+      "workspaceAccess": "none",
+      "minTiantaVersion": "1.0.0",
+      "download": {
+        "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/live2d-aijier-v1.0.0/live2d-aijier-1.0.0.zip",
+        "sha256": "e22e208bdd79073e7adb4319879bb8ee9685bd7896277a61243acd4b877db321",
+        "size": 19576252
+      }
+    },
+    {
+      "id": "file-toolkit",
+      "name": "文件工具箱",
+      "summary": "离线完成 Office / PDF / 图片格式转换，以及 PDF 合并、拆分和文字水印。",
+      "description": "11 项本地文件能力：Word/Excel/PPT/图片转 PDF，PDF 转 Word/Excel/PPT/图片，PDF 合并、拆分和文字水印。全部依赖随包携带，不依赖 Microsoft Office、外网或云端服务。",
+      "version": "1.0.0",
+      "author": "PenumbraMemories",
+      "tags": [
+        "文件",
+        "PDF",
+        "Office",
+        "格式转换",
+        "离线"
+      ],
+      "homepage": "https://github.com/PenumbraMemories/tianta-mcp-market",
+      "permissions": [
+        "读取工作区内的 Office、PDF 和图片文件",
+        "写入工作区内的转换结果",
+        "完全离线运行，不访问网络或外部应用"
+      ],
+      "workspaceAccess": "read-write",
+      "minTiantaVersion": "1.0.0",
+      "download": {
+        "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/file-toolkit-v1.0.0/file-toolkit-1.0.0.zip",
+        "sha256": "790dabcb41d41b49df693b2a6063b3ae181d29787bb6b96c18900ebf06dde61f",
+        "size": 34676216
       }
     }
   ]
