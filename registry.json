@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "name": "Tianta MCP Market",
-  "updatedAt": "2026-10-30T01:40:00Z",
+  "updatedAt": "2026-10-30T02:15:00Z",
   "packages": [
     {
       "id": "text-toolkit",
@@ -183,8 +183,8 @@
       "minTiantaVersion": "1.0.0",
       "download": {
         "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/file-toolkit-v1.0.0/file-toolkit-1.0.0.zip",
-        "sha256": "790dabcb41d41b49df693b2a6063b3ae181d29787bb6b96c18900ebf06dde61f",
-        "size": 34676216
+        "sha256": "0f0b60c6f381977fa25cf0c17a6d4810a3c7a0d24c832c746c037bcce1af933f",
+        "size": 34676424
       }
     }
   ]
