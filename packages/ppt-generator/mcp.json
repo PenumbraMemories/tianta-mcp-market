@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "ppt-generator",
+  "name": "PPT 生成",
+  "version": "1.0.0",
+  "description": "把结构化大纲渲染成可编辑的 PowerPoint，支持封面、章节、要点、双栏、对比、图片、表格、引言和数据卡。",
+  "author": "Tianta",
+  "license": "MIT",
+  "external": true,
+  "workspaceAccess": "read-write",
+  "timeoutMs": 300000,
+  "entrypoint": "server.py",
+  "tools": [
+    {
+      "name": "create_presentation",
+      "description": "根据 deck JSON 生成 .pptx 文件，返回输出路径、页数和警告。",
+      "settings": []
+    }
+  ],
+  "permissions": [
+    "读取本地图片作为幻灯片配图",
+    "写入用户指定的 .pptx 文件",
+    "完全离线运行，不调用在线模型或图片服务"
+  ]
+}
