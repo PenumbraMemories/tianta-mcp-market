@@ -43,14 +43,6 @@ Release 里的 zip 必须把 `mcp.json`、入口脚本和依赖文件放在根�
 
 `workspaceAccess` 只能是 `none`、`read` 或 `read-write`。市场安装器只接受 HTTPS 下载、校验 SHA256，并在安装时拒绝路径穿越和符号链接。
 
-## 示例包
-
-`packages/text-toolkit/` 是第一个示例包：两个纯文本工具，不访问文件系统，适合验证安装流程。
-
-下载地址：
-
-`https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/v0.1.0/text-toolkit-0.1.0.zip`
-
 ## 安全说明
 
 MCP 子进程以当前用户权限运行，市场页会展示包声明的权限，但权限文本不是操作系统级沙箱。安装前请审阅源码。

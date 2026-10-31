@@ -1,33 +1,8 @@
 {
   "schemaVersion": 1,
   "name": "Tianta MCP Market",
-  "updatedAt": "2026-10-31T03:49:27Z",
+  "updatedAt": "2026-10-31T09:00:00Z",
   "packages": [
-    {
-      "id": "text-toolkit",
-      "name": "文本工具箱",
-      "summary": "统计文本、生成 slug，一个不访问文件的入门示例。",
-      "description": "演示 Tianta MCP 市场的完整安装格式：自带 mcp.json、stdio 入口和最小运行时。安装后不会访问网络，也不会读写工作区文件。",
-      "version": "0.1.0",
-      "author": "PenumbraMemories",
-      "tags": [
-        "文本",
-        "示例",
-        "入门"
-      ],
-      "homepage": "https://github.com/PenumbraMemories/tianta-mcp-market",
-      "permissions": [
-        "无文件访问",
-        "只在本机运行"
-      ],
-      "workspaceAccess": "none",
-      "minTiantaVersion": "1.0.0",
-      "download": {
-        "url": "https://github.com/PenumbraMemories/tianta-mcp-market/releases/download/v1.0.0/text-toolkit-0.1.0.zip",
-        "sha256": "45642f7d6fcf54f238278966c18629804e5b52ab4a446099ad39f4f773ff52b7",
-        "size": 4204
-      }
-    },
     {
       "id": "audio-to-midi",
       "name": "音频转 MIDI",
